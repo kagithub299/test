@@ -1,5 +1,10 @@
+<!DOCTYPE html>
+<html lang="ja">
 <html> 
-<head></head> 
+<head>
+    <meta charset="UTF-8">
+    <title>S</title>
+</head> 
 
 <button id="btn">
 送信
@@ -8,18 +13,19 @@
 	btn = document.getElementById("btn");
 	btn.onclick = function(){
 		//ここにクリック時のコードを書きます
-		var a = document.getElementById( "textarea01" ).value ;
-		var b = document.getElementById( "textarea02" ).value ;
-		var c = document.getElementById( "textarea03" ).value ;
-　　　console.log(a+'\n'+'\n'+b+'\n'+c+'\n'+"#");
-　　　console.log(a+'\n'+'\n'+b+'\n'+c+'\n'+"#h");
+		var t = document.getElementById( "textarea01" ).value ;
+		var r = document.getElementById( "textarea02" ).value ;
+		var u = document.getElementById( "textarea03" ).value ;
+　　　console.log(t+'\n'+'\n'+r+'\n'+u+'\n'+"#");
+　　　console.log(t+'\n'+'\n'+"【"+t+"】"+'\n'+'\n'+r+'\n'+u+'\n');
+　　　console.log(t+'\n'+'\n'+r+'\n'+'\n'+"↓"+'\n'+u+'\n');
 	}
 </script>
 <body> 
 
 <textarea id="textarea01" cols="50" rows="5" placeholder="タ"></textarea>
 <textarea id="textarea02" cols="50" rows="5" placeholder="リ"></textarea>
-<textarea id="textarea03" cols="50" rows="5" placeholder="L"></textarea>
+<textarea id="textarea03" cols="50" rows="5" placeholder="U"></textarea>
 
 </body> 
 </html>
