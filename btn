@@ -3,11 +3,44 @@
 <html> 
 <head>
     <meta charset="UTF-8">
-    <title>S</title>
+    <title>SNS</title>
+<style type="text/css">
+<!--
+ textarea{froat:left;}
+ #twittertext {border: solid 1px #CCFFFF}
+ #fbooktext {border: solid 1px #3366FF}
+ #youtubetext {border: solid 1px #FF0000}
+ #btn,input,#twittertext,#fbooktext,#youtubetext{
+    background-color: transparent;
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+ #btn:hover {
+    background: #67c5ff;
+    color: white;
+}
+ input:hover {
+    background: #67c5ff;
+    color: white;
+}
+ body{
+    background: #b;
+}
+textarea {
+  resize: none;
+}
+-->
+</style>
 </head> 
 
 <button id="btn">
-送信
+送信ボタン
 </button>
 <script type="text/javascript">
 	btn = document.getElementById("btn");
@@ -16,16 +49,36 @@
 		var t = document.getElementById( "textarea01" ).value ;
 		var r = document.getElementById( "textarea02" ).value ;
 		var u = document.getElementById( "textarea03" ).value ;
+		//ログ出力
 　　　console.log(t+'\n'+'\n'+r+'\n'+u+'\n'+"#");
 　　　console.log(t+'\n'+'\n'+"【"+t+"】"+'\n'+'\n'+r+'\n'+u+'\n');
 　　　console.log(t+'\n'+'\n'+r+'\n'+'\n'+"↓"+'\n'+u+'\n');
+　　　//ツイッター
+　　　var twitter = (t+'\n'+'\n'+r+'\n'+u+'\n'+"#F");
+　　　var twitter = twitter.replace(/\n/g,"<BR>");
+　　　twittertext.innerHTML=twitter;
+　　　//フェイスブック
+　　　var fbook = (t+'\n'+'\n'+"【"+t+"】"+'\n'+'\n'+r+'\n'+u+'\n');
+　　　var fbook = fbook.replace(/\n/g,"<BR>");
+　　　fbooktext.innerHTML=fbook;
+　　　//ユーチューブ
+　　　var youtube = (t+'\n'+'\n'+r+'\n'+'\n'+"↓記"+'\n'+u+'\n');
+　　　var youtube = youtube.replace(/\n/g,"<BR>");
+　　　youtubetext.innerHTML=youtube;
 	}
 </script>
 <body> 
-
-<textarea id="textarea01" cols="50" rows="5" placeholder="タ"></textarea>
-<textarea id="textarea02" cols="50" rows="5" placeholder="リ"></textarea>
-<textarea id="textarea03" cols="50" rows="5" placeholder="U"></textarea>
-
+<form>
+<input type="reset" value="リセット。">
+<textarea id="textarea01" cols="50" rows="5" placeholder="ル"></textarea>
+<textarea id="textarea02" cols="50" rows="5" placeholder="ド"></textarea>
+<textarea id="textarea03" cols="50" rows="5" placeholder="L"></textarea>
+<p id="line">------------------------------------</p>
+<p id="twittertext"></p>
+<p id="line">------------------------------------</p>
+<p id="fbooktext"></p>
+<p id="line">------------------------------------</p>
+<p id="youtubetext"></p>
+</form>
 </body> 
 </html>
