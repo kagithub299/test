@@ -50,7 +50,7 @@ textarea {
 		var r = document.getElementById( "textarea02" ).value ;
 		var u = document.getElementById( "textarea03" ).value ;
 		//ログ出力
-　　　console.log(t+'\n'+'\n'+r+'\n'+u+'\n'+"#");
+　　　console.log(t+'\n'+'\n'+r+'\n'+u+'\n'+"#F");
 　　　console.log(t+'\n'+'\n'+"【"+t+"】"+'\n'+'\n'+r+'\n'+u+'\n');
 　　　console.log(t+'\n'+'\n'+r+'\n'+'\n'+"↓"+'\n'+u+'\n');
 　　　//ツイッター
@@ -62,7 +62,7 @@ textarea {
 　　　var fbook = fbook.replace(/\n/g,"<BR>");
 　　　fbooktext.innerHTML=fbook;
 　　　//ユーチューブ
-　　　var youtube = (t+'\n'+'\n'+r+'\n'+'\n'+"↓記"+'\n'+u+'\n');
+　　　var youtube = (t+'\n'+'\n'+r+'\n'+'\n'+"↓"+'\n'+u+'\n');
 　　　var youtube = youtube.replace(/\n/g,"<BR>");
 　　　youtubetext.innerHTML=youtube;
 	}
@@ -70,9 +70,9 @@ textarea {
 <body> 
 <form>
 <input type="reset" value="リセット。">
-<textarea id="textarea01" cols="50" rows="5" placeholder="ル"></textarea>
-<textarea id="textarea02" cols="50" rows="5" placeholder="ド"></textarea>
-<textarea id="textarea03" cols="50" rows="5" placeholder="L"></textarea>
+<textarea id="textarea01" cols="50" rows="5" placeholder="タ"></textarea>
+<textarea id="textarea02" cols="50" rows="5" placeholder="リ"></textarea>
+<textarea id="textarea03" cols="50" rows="5" placeholder="U"></textarea>
 <p id="line">------------------------------------</p>
 <p id="twittertext"></p>
 <p id="line">------------------------------------</p>
