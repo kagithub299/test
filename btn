@@ -50,11 +50,11 @@ textarea {
 		var r = document.getElementById( "textarea02" ).value ;
 		var u = document.getElementById( "textarea03" ).value ;
 		//ログ出力
-　　　console.log(t+'\n'+'\n'+r+'\n'+u+'\n'+"#F");
+　　　console.log(t+'\n'+'\n'+r+'\n'+u+'\n'+"#");
 　　　console.log(t+'\n'+'\n'+"【"+t+"】"+'\n'+'\n'+r+'\n'+u+'\n');
 　　　console.log(t+'\n'+'\n'+r+'\n'+'\n'+"↓"+'\n'+u+'\n');
 　　　//ツイッター
-　　　var twitter = (t+'\n'+'\n'+r+'\n'+u+'\n'+"#F");
+　　　var twitter = (t+'\n'+'\n'+r+'\n'+u+'\n'+"#");
 　　　var twitter = twitter.replace(/\n/g,"<BR>");
 　　　twittertext.innerHTML=twitter;
 　　　//フェイスブック
